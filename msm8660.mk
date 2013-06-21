@@ -41,6 +41,7 @@ PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio_policy.msm8660 \
     audio.primary.msm8660 \
+    audio.usb.default \
     audio_policy.conf \
     libaudioutils
 
@@ -59,6 +60,10 @@ PRODUCT_PACKAGES += \
     liboverlay \
     libqdutils \
     libtilerenderer
+
+# POWER
+PRODUCT_PACKAGES += \
+    power.msm8660
 
 # OMX
 PRODUCT_PACKAGES += \
