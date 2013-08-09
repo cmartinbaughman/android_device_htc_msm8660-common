@@ -78,11 +78,12 @@ PRODUCT_PACKAGES += \
     libstagefrighthw \
     libOmxQcelp13Enc \
     libOmxEvrcEnc \
+    libv8 \
     libOmxAmrEnc
 
 # Camera wrapper
 PRODUCT_PACKAGES += \
-    camera.default
+    camera.msm8660
 
 # HDMI
 PRODUCT_PACKAGES += \
@@ -127,5 +128,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.mdpcomp.logs=0 \
     debug.sf.hw=1 \
     dev.pm.dyn_samplingrate=1 \
-    ro.opengles.version=131072
+    ro.opengles.version=131072 \
+    ro.bq.gpu_to_cpu_unsupported=1
 
